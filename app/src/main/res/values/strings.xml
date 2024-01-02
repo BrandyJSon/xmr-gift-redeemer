@@ -10,6 +10,15 @@
     <string name="stepSix">6. Click \"Restore from date\" and select the following date</string>
     <string name="stepSeven">7. Click \"Restore\" and wait for cake wallet to sync with the rest of the blockchain. This may take some time but once it is synchronized you will be able to spend the XMR. It is recommended to create a new wallet and send the funds there as the gifter of the wallet has access to the funds. <a href="https://guides.cakewallet.com/">This guide may be helpful if you are confused on how to do this.</a></string>
     <string name="copyDesc">Click to copy seed phrase for giftwallet</string>
+    <string name="switchAuto">Mode: Auto</string>
+    <string name="switchMan">Mode: Manual</string>
+    <string name="redemptionAddressPrompt">Enter a monero wallet address to redeem funds too. If you aren\'t sure how to do this follow <a href="https://guides.cakewallet.com/docs/basic-features/create-first-wallet/">this guide</a> to create a wallet. Next click receive in cake wallet then copy and paste the address below.</string>
+    <string name="redeemButton">Redeem Giftcard</string>
+    <string name="redemptionWarning">THIS ACTION CANNOT BE UNDONE CHECK YOUR WALLET ADDRESS BEFORE CONFIRMING</string>
+    <string name="advanced">Advanced Options</string>
+    <string name="nodePrompt">Remote node url:</string>
+    <string name="defaultNode">https://node.sethforprivacy.com:443</string>
+    <string name="advancedRedeem">Advanced Redemption</string>
     <string name="walletHeader">\n
         XMR Redemption Steps</string>
 </resources>
