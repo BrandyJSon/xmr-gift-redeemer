@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="326dp"
+        android:layout_height="668dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stepOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stepOne" />
+
+            <TextView
+                android:id="@+id/stepTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stepTwo" />
+
+            <TextView
+                android:id="@+id/stepThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stepThree" />
+
+            <TextView
+                android:id="@+id/stepFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stepFour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/seedText"
+                    android:layout_width="264dp"
+                    android:layout_height="98dp"
+                    android:background="#3C673AB7" />
+
+                <ImageButton
+                    android:id="@+id/copyButtonSeed"
+                    android:layout_width="63dp"
+                    android:layout_height="65dp"
+                    android:contentDescription="@string/copyDesc"
+                    android:src="@drawable/ic_copy" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stepFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stepFive" />
+
+            <TextView
+                android:id="@+id/stepSix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stepSix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/restoreDate"
+                    android:layout_width="271dp"
+                    android:layout_height="match_parent"
+                    android:background="#3C673AB7"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/copyButtonDate"
+                    android:layout_width="37dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/copyDesc"
+                    android:src="@drawable/ic_copy" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stepSeven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/stepSeven" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="406dp"
+        android:layout_height="93dp"
+        android:background="#673AB7"
+        android:text="@string/walletHeader"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
