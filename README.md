@@ -6,7 +6,13 @@ Check out the xmr-gift-generator project [here](https://github.com/BrandyJSon/xm
 ### Usage
 Apk is available in releases. UI updates may be made in the next coming weeks.
 
-1. Open app and point camera so qr code on giftcard takes up most of the frame.
+1. Open app and point camera so qr code on the gift card is in frame.
+
+    <img src="https://github.com/BrandyJSon/xmr-gift-redeemer/blob/master/imgs/giftCardScanner.png" width="150">
 2. Enter decryption phrase on giftcard
+   
+   <img src="https://github.com/BrandyJSon/xmr-gift-redeemer/blob/master/imgs/DecryptionPhraseInput.png" width="150">
 3. Follow the instructions to import the gift wallet to cake wallet
+   
+   <img src="https://github.com/BrandyJSon/xmr-gift-redeemer/blob/master/imgs/manualRedemption.png" width="150">
 
