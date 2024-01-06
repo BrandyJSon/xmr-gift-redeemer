@@ -2,12 +2,12 @@
     <string name="app_name">XMR-gift-redeemer</string>
     <string name="Key_input_prompt">Please reveal the covered decryption phrase on your monero gift card and enter it below</string>
     <string name="canceled">canceled</string>
-    <string name="stepOne">1. Download cake wallet from the app store <a href="https://play.google.com/store/apps/details?id=com.cakewallet.cake_wallet">here</a></string>
-    <string name="stepTwo">2. Select \"Restore from seed/keys\"</string>
+    <string name="stepOne">1. Download cake wallet or monero.com from either of the links below</string>
+    <string name="stepTwo">2. Open and select \"Restore from seed/keys\"</string>
     <string name="stepThree">3. Enter a pin then choose \"Monero(XMR)\" and click next</string>
     <string name="stepFour">4. Enter a wallet name of your choice then copy and paste the following where it says "Enter your seed phrase"</string>
     <string name="stepFive">5. Make sure \"Legacy(25 words)\" is selected NOT \"Polyseed(16 words)\"</string>
-    <string name="stepSix">6. Click \"Restore from date\" and select the following date</string>
+    <string name="stepSix">6. Click \"Restore from blockheight\" and copy and paste the following number</string>
     <string name="stepSeven">7. Click \"Restore\" and wait for cake wallet to sync with the rest of the blockchain. This may take some time but once it is synchronized you will be able to spend the XMR. It is recommended to create a new wallet and send the funds there as the gifter of the wallet has access to the funds. <a href="https://guides.cakewallet.com/">This guide may be helpful if you are confused on how to do this.</a></string>
     <string name="copyDesc">Click to copy seed phrase for giftwallet</string>
     <string name="switchAuto">Mode: Auto</string>

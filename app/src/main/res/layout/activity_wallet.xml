@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFFFF">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:id="@+id/manualRedemptionView"
@@ -14,7 +13,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="40dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -29,6 +28,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/stepOne" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cakeWalletButton2"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cake Wallet Download" />
+
+                <Button
+                    android:id="@+id/moneroComButton2"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Monero.com Download" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/stepTwo"
@@ -55,13 +75,13 @@
 
                 <TextView
                     android:id="@+id/seedText"
-                    android:layout_width="264dp"
+                    android:layout_width="263dp"
                     android:layout_height="98dp"
                     android:background="#3C673AB7" />
 
                 <ImageButton
                     android:id="@+id/copyButtonSeed"
-                    android:layout_width="63dp"
+                    android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:contentDescription="@string/copyDesc"
                     android:src="@drawable/ic_copy" />
@@ -86,7 +106,7 @@
 
                 <TextView
                     android:id="@+id/restoreDate"
-                    android:layout_width="271dp"
+                    android:layout_width="263dp"
                     android:layout_height="match_parent"
                     android:background="#3C673AB7"
                     android:textSize="28dp"
@@ -94,8 +114,8 @@
 
                 <ImageButton
                     android:id="@+id/copyButtonDate"
-                    android:layout_width="37dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
                     android:layout_weight="1"
                     android:contentDescription="@string/copyDesc"
                     android:src="@drawable/ic_copy" />
@@ -135,22 +155,97 @@
         android:background="#3C673AB7"
         android:text="@string/switchAuto"
         android:textAlignment="center"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <ScrollView
-        android:id="@+id/automaticRedemptionView"
+        android:id="@+id/automaticRedeemView"
+        android:layout_width="326dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="62dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/redemptionSwitch">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you do not have an xmr wallet application installed, install either of the following or click the switch above for general import instructs that can be used with other wallets."
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cakeWalletButton"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cake Wallet Download" />
+
+                <Button
+                    android:id="@+id/moneroComButton"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Monero.com Download"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make sure to send the  funds to a different wallet once you redeem as other people know the keys to access this wallet."
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/redeemButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Redeem"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/automaticSendView"
         android:layout_width="326dp"
         android:layout_height="500dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="40dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -176,6 +271,8 @@
                 android:id="@+id/autoRedemptionButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:text="@string/redeemButton" />
 
             <View
@@ -223,6 +320,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:text="@string/advancedRedeem" />
         </LinearLayout>
     </ScrollView>
